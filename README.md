@@ -63,7 +63,7 @@ Edit
 bash
 Copy
 Edit
-git clone https://github.com/your-username/async-agentic-rag.git
+git clone[ https://github.com/your-username/async-agentic-rag.git](https://github.com/GokulAG1608/Agentic-RAG-system.git)
 cd async-agentic-rag
 2. Install Dependencies
 bash
