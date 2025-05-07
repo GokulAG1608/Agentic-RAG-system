@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+aiohttp
+aiomysql
+mysql-connector-python
+python-dotenv

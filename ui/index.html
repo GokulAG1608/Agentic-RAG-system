@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head><title>RAG Agent Chat</title></head>
+<body>
+    <h2>Chat with Agent</h2>
+    <input id="userInput" type="text" placeholder="Enter your query">
+    <button onclick="sendQuery()">Send</button>
+    <pre id="responseBox"></pre>
+
+    <script>
+        async function sendQuery() {
+            const query = document.getElementById("userInput").value;
+            const res = await fetch("http://localhost:8000/chat", {
+                method: "POST",
+                headers: {"Content-Type": "application/json"},
+                body: JSON.stringify({query})
+            });
+            const data = await res.json();
+            document.getElementById("responseBox").innerText = data.response;
+        }
+    </script>
+</body>
+</html>
