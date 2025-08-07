@@ -13,3 +13,4 @@ async def fetch_documents_by_president(president: str):
     await cur.close()
     conn.close()
     return [{"title": r[0], "summary": r[1]} for r in rows]
+
